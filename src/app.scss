@@ -1,0 +1,21 @@
+:root {
+    --main-color: #0b0b0b;
+    //#0f101c, #242424
+  }
+  
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  @mixin tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
